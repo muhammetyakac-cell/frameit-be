@@ -280,7 +280,7 @@ export const FrameCustomizer: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* ================= LEFT COLUMN: LIVE VISUAL CANVAS ================= */}
-          <div className="lg:col-span-7 sticky top-28 space-y-4">
+          <div className="lg:col-span-7 lg:sticky lg:top-28 space-y-4">
             
             <div className="flex items-center justify-between px-2">
               <span className="text-xs font-bold uppercase tracking-wider text-museum-wood/80 flex items-center gap-1.5">
