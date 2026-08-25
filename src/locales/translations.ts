@@ -1,14 +1,16 @@
 export const translations = {
   nl: {
     meta: {
-      title: "Frameit.be | 3D Mini Memory Museum Lijsten - Handgemaakt in België",
-      description: "Verander je mooiste foto's en herinneringen in een betoverend 3D miniatuur museum met warme LED-spots, gouden baroklijstjes en handgemaakte figuurtjes. Het perfecte cadeau in België.",
+      title: "Frameit.be | 3D Mini Memory Museum — Hét Originele Gepersonaliseerde Cadeau in België",
+      description: "Op zoek naar een uniek gepersonaliseerd cadeau in België? Verander je mooiste foto's in een verlicht 3D miniatuur museum met warme LED-spots, gouden baroklijstjes en handgemaakte figuurtjes. Perfect voor huwelijk, trouwcadeau, jubileum, geboorte of verjaardag.",
+      keywords: "gepersonaliseerd cadeau belgië, origineel huwelijkscadeau, trouwcadeau met foto, kraamcadeau met naam, geboortecadeau baby, jubileum cadeau koppel, 3d fotolijst met diepte, mini memory museum, fotolijst met verlichting, handgemaakt cadeau antwerpen brussel gent brugge leuven",
     },
     nav: {
       brand: "Frameit.be",
       subBrand: "Mini Memory Museum",
       customizer: "Stel Zelf Samen",
       catalog: "Collecties",
+      occasions: "Cadeaugids",
       crafting: "Hoe Het Werkt",
       reviews: "Ervaringen",
       faq: "Veelgestelde Vragen",
@@ -17,10 +19,10 @@ export const translations = {
       bannerText: "🇧🇪 Gratis verzending in België vanaf €75 • 100% Handgemaakt met Liefde • Levering in 3-5 werkdagen",
     },
     hero: {
-      badge: "✨ Handgemaakt Gepersonaliseerd Cadeau in België",
+      badge: "✨ Hét #1 Originele Gepersonaliseerde Cadeau in België",
       titleLine1: "Mini herinneringen,",
       titleLine2: "grote gevoelens.",
-      subtitle: "Jouw favoriete momenten veranderd in een warm, verlicht 3D miniatuur museum. Met echte fotolijstjes in goud barok, op maat gemaakte figuurtjes en sfeervolle LED-spotjes.",
+      subtitle: "Jouw favoriete momenten veranderd in een warm, verlicht 3D miniatuur museum. Met echte fotolijstjes in goud barok, op maat gemaakte figuurtjes en sfeervolle LED-spotjes. Het meest onvergetelijke cadeau voor huwelijk, jubileum of geboorte.",
       ctaCustomize: "Stel Jouw Mini Museum Samen",
       ctaCatalog: "Bekijk Kant-en-klare Thema's",
       trustReviews: "4.9/5 sterren op basis van 480+ tevreden klanten in Vlaanderen, Brussel & Wallonië",
@@ -33,8 +35,63 @@ export const translations = {
       floatingCard: {
         title: "Bruiloft & Huwelijk Museum",
         subtitle: "Liefde vereeuwigd in miniatuur",
-        tag: "Bestseller ♡",
+        tag: "Bestseller Cadeau ♡",
       }
+    },
+    occasions: {
+      tag: "Cadeau Inspiratie & Gelegenheden",
+      title: "Voor Elk Bijzonder Moment een Uniek Cadeau",
+      subtitle: "Of het nu gaat om een trouwfeest, geboorte of jubileum — geef een blijvende herinnering die een leven lang gekoesterd wordt.",
+      items: [
+        {
+          id: "wedding",
+          emoji: "💍",
+          title: "Huwelijk & Trouwcadeau",
+          subtitle: "Trouwfoto's & Bruidspaar",
+          desc: "Het meest emotionele huwelijkscadeau. Vereeuwig de openingsdans, trouwfoto's en trouwdatum in een sprookjesachtig verlicht miniatuur museum.",
+          tag: "Meest Gekozen",
+        },
+        {
+          id: "anniversary",
+          emoji: "✨",
+          title: "Jubileum & Huwelijksverjaardag",
+          subtitle: "1, 10, 25 of 50 Jaar Liefde",
+          desc: "Vier de mijlpalen van de liefde met een luxe eikenhouten lijst, gegraveerde jubileumdatum en de mooiste momenten samen door de jaren heen.",
+          tag: "Romantisch",
+        },
+        {
+          id: "baby",
+          emoji: "🍼",
+          title: "Geboorte & Kraamcadeau",
+          subtitle: "Eerste Foto's & Voetafdrukjes",
+          desc: "Een magisch kraamcadeau voor kersverse ouders. Bewaar de echofoto, geboortekaart en eerste babyfoto's met een schattig beertje en wiegje.",
+          tag: "Bewaardoos",
+        },
+        {
+          id: "family",
+          emoji: "🏡",
+          title: "Gezin & Generaties",
+          subtitle: "Grootouders, Ouders & Kinderen",
+          desc: "Breng de hele familie bij elkaar. Het ultieme verjaardagscadeau voor oma & opa vol foto's van alle kleinkinderen en het gezin.",
+          tag: "Familiehart",
+        },
+        {
+          id: "pets",
+          emoji: "🐾",
+          title: "Huisdier Aandenken",
+          subtitle: "Hond & Kat Herinnering",
+          desc: "Eer jouw trouwe viervoeter met een liefdevol miniatuurkamertje met de mooiste foto's en speelse huisdierfiguurtjes.",
+          tag: "Dierenliefde",
+        },
+        {
+          id: "birthday",
+          emoji: "🎁",
+          title: "Bijzondere Verjaardag",
+          subtitle: "18, 30, 50 (Abraham/Sarah)",
+          desc: "Verras een dierbare vriend(in) of familielid met een tijdreis door jullie mooiste herinneringen en reizen samen.",
+          tag: "Verrassing",
+        }
+      ]
     },
     customizer: {
       tag: "Interactieve Studio",
@@ -122,7 +179,7 @@ export const translations = {
       products: {
         wedding: {
           title: "Wedding & Proposal Memory Box",
-          desc: "Het ultieme huwelijks- of verlovingscadeau. Romantisch behang, gouden baroklijstjes voor jullie mooiste trouwfoto's en een schattig kleifiguurtje.",
+          desc: "Hét ultieme huwelijks- of verlovingscadeau. Romantisch behang, gouden baroklijstjes voor jullie mooiste trouwfoto's en een schattig kleifiguurtje.",
           feat1: "5 tot 7 miniatuur gouden fotolijstjes",
           feat2: "Handgemaakt bruidspaar figuurtje",
           feat3: "Warme LED spots & gegraveerd plaatje",
@@ -179,6 +236,7 @@ export const translations = {
       tag: "Tevreden Klanten",
       title: "Verhalen Die We Mogen Vereeuwigen",
       subtitle: "Ontdek waarom honderden mensen in België kiezen voor Frameit.be voor hun meest dierbare momenten.",
+      verifiedBadge: "Geverifieerde Koper",
       items: [
         {
           author: "Sophie & Thomas",
@@ -239,14 +297,16 @@ export const translations = {
   },
   fr: {
     meta: {
-      title: "Frameit.be | Cadres 3D Mini Musée de Souvenirs - Fait Main en Belgique",
-      description: "Transformez vos plus belles photos et souvenirs en un magnifique mini musée 3D avec éclairage LED chaleureux, cadres baroques dorés et figurines artisanales.",
+      title: "Frameit.be | Mini Musée 3D Souvenirs — L'Idée Cadeau Personnalisé N°1 en Belgique",
+      description: "À la recherche d'une idée cadeau originale et personnalisée en Belgique ? Transformez vos plus belles photos en un mini musée 3D lumineux avec cadres dorés baroques, spots LED chaleureux et figurines sur mesure. Idéal pour mariage, anniversaire, naissance ou couple.",
+      keywords: "cadeau personnalisé belgique, idée cadeau original bruxelles liège namur, cadeau de mariage personnalisé, cadre photo 3d lumineux, cadeau de naissance bébé, boîte à souvenirs personnalisée, cadeau anniversaire couple, cadre vitrine 3d fait main",
     },
     nav: {
       brand: "Frameit.be",
       subBrand: "Mini Musée de Souvenirs",
       customizer: "Personnaliser",
       catalog: "Collections",
+      occasions: "Idées Cadeaux",
       crafting: "Fabrication",
       reviews: "Avis Clients",
       faq: "FAQ",
@@ -255,10 +315,10 @@ export const translations = {
       bannerText: "🇧🇪 Livraison offerte en Belgique dès 75€ • 100% Fait Main avec Amour • Expédition en 3-5 jours",
     },
     hero: {
-      badge: "✨ Cadeau Personnalisé Artisanal en Belgique",
+      badge: "✨ Le Cadeau Personnalisé Artisanal N°1 en Belgique",
       titleLine1: "Mini souvenirs,",
       titleLine2: "grandes émotions.",
-      subtitle: "Vos moments préférés transformés en un chaleureux mini musée en 3D. Avec de véritables mini cadres baroques dorés, des figurines sur mesure et des spots LED d'ambiance.",
+      subtitle: "Vos moments préférés transformés en un chaleureux mini musée en 3D. Avec de véritables mini cadres baroques dorés, des figurines sur mesure et des spots LED d'ambiance. Le cadeau le plus mémorable pour un mariage, un anniversaire ou une naissance.",
       ctaCustomize: "Créer Mon Mini Musée",
       ctaCatalog: "Découvrir les Collections",
       trustReviews: "4.9/5 étoiles selon plus de 480+ clients ravis en Wallonie, Bruxelles & Flandre",
@@ -271,8 +331,63 @@ export const translations = {
       floatingCard: {
         title: "Musée Mariage & Amour",
         subtitle: "L'amour immortalisé en miniature",
-        tag: "Bestseller ♡",
+        tag: "Cadeau Bestseller ♡",
       }
+    },
+    occasions: {
+      tag: "Inspiration & Occasions Cadeaux",
+      title: "Un Cadeau d'Exception Pour Chaque Grand Moment",
+      subtitle: "Mariage, naissance, anniversaire ou fête de famille : offrez un souvenir éternel fait pour toucher le cœur.",
+      items: [
+        {
+          id: "wedding",
+          emoji: "💍",
+          title: "Mariage & Fiançailles",
+          subtitle: "Photos du Jour J & Mariés",
+          desc: "Le cadeau de mariage le plus émouvant. Immortalisez l'ouverture du bal, les photos de couple et la date sacrée dans un décor féerique éclairé.",
+          tag: "Le Plus Populaire",
+        },
+        {
+          id: "anniversary",
+          emoji: "✨",
+          title: "Anniversaire de Mariage",
+          subtitle: "1, 10, 25 ou 50 Ans d'Amour",
+          desc: "Célébrez les noces de coton, d'étain ou d'or avec un cadre en chêne véritable gravé à votre date et rempli de vos plus tendres souvenirs.",
+          tag: "Romantique",
+        },
+        {
+          id: "baby",
+          emoji: "🍼",
+          title: "Naissance & Baptême",
+          subtitle: "Échographie & Premiers Sourires",
+          desc: "Une boîte à souvenirs magique pour jeunes parents. Préservez l'échographie, le faire-part et les empreintes avec un petit ourson miniature.",
+          tag: "Boîte Souvenir",
+        },
+        {
+          id: "family",
+          emoji: "🏡",
+          title: "Famille & Générations",
+          subtitle: "Grands-parents & Enfants",
+          desc: "Réunissez toute la famille. Le cadeau d'anniversaire idéal pour papy et mamie avec les photos de tous leurs petits-enfants adorés.",
+          tag: "Cœur de Famille",
+        },
+        {
+          id: "pets",
+          emoji: "🐾",
+          title: "Animaux de Compagnie",
+          subtitle: "Chiens & Chats Adorés",
+          desc: "Honorez votre fidèle compagnon avec une pièce miniature réconfortante ornée de ses plus belles photos et petits accessoires.",
+          tag: "Amour Animal",
+        },
+        {
+          id: "birthday",
+          emoji: "🎁",
+          title: "Anniversaire Spécial",
+          subtitle: "18, 30, 40, 50 Ans",
+          desc: "Surprenez un être cher avec un voyage miniature à travers vos plus beaux voyages, fous rires et souvenirs partagés.",
+          tag: "Surprise",
+        }
+      ]
     },
     customizer: {
       tag: "Studio Interactif",
@@ -417,6 +532,7 @@ export const translations = {
       tag: "Avis Clients",
       title: "Des Émotions Partagées",
       subtitle: "Découvrez les témoignages de ceux qui ont offert ou reçu un cadre Frameit.be en Belgique.",
+      verifiedBadge: "Acheteur Vérifié",
       items: [
         {
           author: "Sophie & Thomas",
@@ -477,14 +593,16 @@ export const translations = {
   },
   en: {
     meta: {
-      title: "Frameit.be | 3D Mini Memory Museum Shadow Box Frames - Handmade in Belgium",
-      description: "Turn your most cherished photos and memories into a magical 3D miniature museum frame with warm LED spotlights, antique golden baroque frames, and handcrafted figurines.",
+      title: "Frameit.be | 3D Mini Memory Museum — #1 Personalized Gift in Belgium",
+      description: "Looking for a unique personalized gift in Belgium? Turn your favorite photos into an illuminated 3D miniature museum frame with warm LED spotlights, antique golden baroque frames, and handcrafted figurines. Perfect for weddings, anniversaries, baby milestones, or birthdays.",
+      keywords: "personalized gift belgium, unique wedding gift brussels antwerp, custom anniversary frame, baby birth keepsake shadow box, handcrafted 3d photo frame led, bespoke gift shop belgium",
     },
     nav: {
       brand: "Frameit.be",
       subBrand: "Mini Memory Museum",
       customizer: "Build Your Frame",
       catalog: "Collections",
+      occasions: "Gift Guide",
       crafting: "How It's Made",
       reviews: "Reviews",
       faq: "FAQ",
@@ -493,10 +611,10 @@ export const translations = {
       bannerText: "🇧🇪 Free shipping in Belgium over €75 • 100% Handmade with Love • 3-5 Days Delivery",
     },
     hero: {
-      badge: "✨ Handcrafted Custom Gift Studio in Belgium",
+      badge: "✨ #1 Handcrafted Personalized Gift Studio in Belgium",
       titleLine1: "Mini memories,",
       titleLine2: "big feelings.",
-      subtitle: "Your favorite moments transformed into an illuminated 3D miniature museum. Featuring genuine golden baroque gallery frames, custom clay figurines, and cozy ambient LED spotlights.",
+      subtitle: "Your favorite moments transformed into an illuminated 3D miniature museum. Featuring genuine golden baroque gallery frames, custom clay figurines, and cozy ambient LED spotlights. The most memorable gift for weddings, anniversaries, and milestones.",
       ctaCustomize: "Customize Your Mini Museum",
       ctaCatalog: "Browse Curated Designs",
       trustReviews: "4.9/5 stars based on 480+ happy customers across Belgium & Europe",
@@ -509,8 +627,63 @@ export const translations = {
       floatingCard: {
         title: "Wedding & Love Museum",
         subtitle: "Love preserved in miniature",
-        tag: "Bestseller ♡",
+        tag: "Bestseller Gift ♡",
       }
+    },
+    occasions: {
+      tag: "Gift Ideas & Occasions",
+      title: "A Unique Keepsake for Every Cherished Moment",
+      subtitle: "Weddings, anniversaries, newborn arrivals, or birthdays — give an unforgettable handcrafted treasure that will be loved forever.",
+      items: [
+        {
+          id: "wedding",
+          emoji: "💍",
+          title: "Wedding & Engagement",
+          subtitle: "First Dance & Couple Moments",
+          desc: "The most moving wedding present. Preserve vows, wedding photos, and marriage date in a magical illuminated miniature gallery room.",
+          tag: "Top Choice",
+        },
+        {
+          id: "anniversary",
+          emoji: "✨",
+          title: "Anniversary & Milestones",
+          subtitle: "1st, 10th, 25th or 50th Year",
+          desc: "Celebrate your love story with natural warm oak wood, custom engraved brass date plaque, and cherished photos through the years.",
+          tag: "Romantic",
+        },
+        {
+          id: "baby",
+          emoji: "🍼",
+          title: "Newborn & Baby Arrival",
+          subtitle: "Ultrasound & First Milestones",
+          desc: "A fairy-tale keepsake for new parents. Display baby ultrasound, birth announcement, and tiny footprints with miniature clay teddy bear.",
+          tag: "Keepsake",
+        },
+        {
+          id: "family",
+          emoji: "🏡",
+          title: "Family & Generations",
+          subtitle: "Grandparents, Parents & Kids",
+          desc: "Gather the whole family under one miniature roof. The ultimate heartfelt gift for grandma & grandpa filled with photos of all grandchildren.",
+          tag: "Family Love",
+        },
+        {
+          id: "pets",
+          emoji: "🐾",
+          title: "Pet Lovers Memorial",
+          subtitle: "Beloved Dogs & Cats",
+          desc: "Honor your furry companion with a heartwarming miniature room displaying your favorite playful pet memories.",
+          tag: "Pet Love",
+        },
+        {
+          id: "birthday",
+          emoji: "🎁",
+          title: "Milestone Birthdays",
+          subtitle: "18th, 30th, 40th, 50th & Beyond",
+          desc: "Surprise a special friend or loved one with a nostalgic miniature journey celebrating shared travels, laughter, and memories.",
+          tag: "Surprise",
+        }
+      ]
     },
     customizer: {
       tag: "Interactive 3D Studio",
@@ -655,6 +828,7 @@ export const translations = {
       tag: "Customer Stories",
       title: "Cherished Moments We've Preserved",
       subtitle: "See why hundreds of happy customers across Belgium choose Frameit.be for their most special gifts.",
+      verifiedBadge: "Verified Buyer",
       items: [
         {
           author: "Sophie & Thomas",

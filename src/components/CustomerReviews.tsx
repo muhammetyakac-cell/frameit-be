@@ -28,21 +28,21 @@ export const CustomerReviews: React.FC = () => {
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {t.reviews.items.map((review, idx) => (
-            <div
+            <article
               key={idx}
               className="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:shadow-xl border border-[#E8DACB] transition-all duration-300 flex flex-col justify-between space-y-6"
             >
               <div className="space-y-4">
                 {/* Rating & Verified Tag */}
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-amber-400">
+                  <div className="flex items-center gap-1 text-amber-400" aria-label="5 sterren beoordeling">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
                   <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
                     <CheckCircle2 className="w-3 h-3" />
-                    Geverifieerde Koper
+                    {t.reviews.verifiedBadge}
                   </span>
                 </div>
 
@@ -55,7 +55,7 @@ export const CustomerReviews: React.FC = () => {
               {/* Author Info */}
               <div className="pt-4 border-t border-[#F4EBE1] flex items-center justify-between">
                 <div>
-                  <h4 className="font-bold text-sm text-museum-dark">{review.author}</h4>
+                  <div className="font-bold text-sm text-museum-dark">{review.author}</div>
                   <span className="text-xs text-museum-wood/80">{review.city}</span>
                 </div>
                 <div className="text-right">
@@ -64,7 +64,7 @@ export const CustomerReviews: React.FC = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 

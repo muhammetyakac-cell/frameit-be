@@ -42,22 +42,31 @@ export const FAQ: React.FC = () => {
                 key={idx}
                 className="bg-white rounded-2xl border border-[#E8DACB] overflow-hidden transition-all duration-200 shadow-xs"
               >
-                <button
-                  onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-serif font-bold text-base sm:text-lg text-museum-dark hover:text-museum-terracotta transition-colors"
-                >
-                  <span>{faq.q}</span>
-                  <div
-                    className={`w-8 h-8 rounded-full bg-[#FAF5ED] flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 bg-museum-terracotta text-white' : 'text-museum-charcoal'
-                    }`}
+                <h3 className="m-0 p-0 font-serif font-bold text-base sm:text-lg text-museum-dark">
+                  <button
+                    onClick={() => setOpenIndex(isOpen ? null : idx)}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${idx}`}
+                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 hover:text-museum-terracotta transition-colors"
                   >
-                    <ChevronDown className="w-4 h-4" />
-                  </div>
-                </button>
+                    <span>{faq.q}</span>
+                    <div
+                      className={`w-8 h-8 rounded-full bg-[#FAF5ED] flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 bg-museum-terracotta text-white' : 'text-museum-charcoal'
+                      }`}
+                    >
+                      <ChevronDown className="w-4 h-4" />
+                    </div>
+                  </button>
+                </h3>
 
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 text-sm sm:text-base text-museum-charcoal/80 leading-relaxed border-t border-[#F4EBE1] pt-4 animate-in fade-in duration-300 font-sans">
+                  <div
+                    id={`faq-answer-${idx}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${idx}`}
+                    className="px-5 pb-6 sm:px-6 text-sm sm:text-base text-museum-charcoal/80 leading-relaxed border-t border-[#F4EBE1] pt-4 animate-in fade-in duration-300 font-sans"
+                  >
                     {faq.a}
                   </div>
                 )}
@@ -69,9 +78,9 @@ export const FAQ: React.FC = () => {
         {/* Direct Ask on WhatsApp Banner */}
         <div className="mt-10 p-6 rounded-3xl bg-[#FAF5ED] border border-gold-400/50 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div>
-            <h4 className="font-serif font-bold text-base text-museum-dark">
+            <h3 className="font-serif font-bold text-base text-museum-dark">
               Nog een specifieke vraag over jouw ontwerp?
-            </h4>
+            </h3>
             <p className="text-xs text-museum-charcoal/80">
               Ons Belgisch atelier staat 7 dagen per week klaar om je te helpen.
             </p>

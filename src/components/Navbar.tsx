@@ -50,6 +50,7 @@ export const Navbar: React.FC = () => {
                 src="/images/logo.jpg"
                 alt="Frameit.be Logo"
                 fill
+                sizes="48px"
                 className="object-cover"
                 priority
               />
@@ -75,6 +76,9 @@ export const Navbar: React.FC = () => {
             </a>
             <a href="#catalog" className="hover:text-museum-terracotta transition-colors">
               {t.nav.catalog}
+            </a>
+            <a href="#occasions" className="hover:text-museum-terracotta transition-colors">
+              {t.nav.occasions}
             </a>
             <a href="#how-it-works" className="hover:text-museum-terracotta transition-colors">
               {t.nav.crafting}
@@ -193,6 +197,13 @@ export const Navbar: React.FC = () => {
               className="px-3 py-2 rounded-xl hover:bg-[#F4ECE0]"
             >
               {t.nav.catalog}
+            </a>
+            <a
+              href="#occasions"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="px-3 py-2 rounded-xl hover:bg-[#F4ECE0]"
+            >
+              {t.nav.occasions}
             </a>
             <a
               href="#how-it-works"

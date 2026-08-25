@@ -145,7 +145,7 @@ export const ProductCatalog: React.FC = () => {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filtered.map((product) => (
-            <div
+            <article
               key={product.id}
               className="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl border border-[#E8DACB] transition-all duration-300 flex flex-col"
             >
@@ -155,6 +155,7 @@ export const ProductCatalog: React.FC = () => {
                   src={product.image}
                   alt={product.title}
                   fill
+                  sizes="(max-width: 768px) 92vw, (max-width: 1280px) 46vw, 580px"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
@@ -206,7 +207,7 @@ export const ProductCatalog: React.FC = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 

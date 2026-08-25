@@ -60,8 +60,9 @@ export const UnboxingShowcase: React.FC = () => {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
                 src="/images/gift_unboxing.jpg"
-                alt="Frameit.be Luxury Unboxing Experience"
+                alt="Frameit.be Luxury Unboxing Experience — Luxe Cadeaubox met Lakzegel"
                 fill
+                sizes="(max-width: 1024px) 92vw, 580px"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />

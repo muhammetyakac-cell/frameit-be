@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
-import { Sparkles, Heart, Star, ShieldCheck, ArrowRight, Lightbulb, Package } from 'lucide-react';
+import { Sparkles, Heart, Star, ShieldCheck, ArrowRight, Lightbulb, Package, Gift } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -22,14 +22,15 @@ export const Hero: React.FC = () => {
             
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-gold-400/60 shadow-xs text-xs sm:text-sm font-semibold text-museum-terracotta">
-              <Sparkles className="w-4 h-4 text-gold-500 animate-spin-slow" />
+              <Gift className="w-4 h-4 text-gold-500" />
               <span>{t.hero.badge}</span>
             </div>
 
-            {/* Main Headline */}
+            {/* Main Headline with semantic SEO expansion */}
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-museum-dark leading-[1.15]">
               <span className="block italic text-museum-terracotta">{t.hero.titleLine1}</span>
               <span className="block text-museum-dark mt-1">{t.hero.titleLine2}</span>
+              <span className="sr-only"> — Frameit.be: Hét Originele Gepersonaliseerde Cadeau & 3D Mini Memory Museum in België</span>
             </h1>
 
             {/* Subtitle */}
@@ -48,10 +49,11 @@ export const Hero: React.FC = () => {
               </a>
 
               <a
-                href="#catalog"
+                href="#occasions"
                 className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white/80 hover:bg-white border border-[#DCC7B3] text-museum-charcoal font-semibold text-base shadow-xs hover:shadow-md transition-all flex items-center justify-center gap-2"
               >
-                <span>{t.hero.ctaCatalog}</span>
+                <Gift className="w-4 h-4 text-museum-terracotta" />
+                <span>{t.nav.occasions}</span>
               </a>
             </div>
 
@@ -77,7 +79,7 @@ export const Hero: React.FC = () => {
 
             {/* Social Proof Stars */}
             <div className="flex items-center justify-center lg:justify-start gap-3 pt-2">
-              <div className="flex items-center text-amber-400">
+              <div className="flex items-center text-amber-400" aria-label="5 van de 5 sterren">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                 ))}
@@ -101,10 +103,11 @@ export const Hero: React.FC = () => {
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-inner border border-white/60">
                 <Image
                   src="/images/museum_couple.jpg"
-                  alt="Frameit.be 3D Mini Memory Museum Shadow Box Frame"
+                  alt="Frameit.be 3D Mini Memory Museum — Gepersonaliseerd Huwelijkscadeau & Trouwlijst met LED Verlichting"
                   fill
-                  className="object-cover transition-transform duration-700 hover:scale-105"
                   priority
+                  sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 520px"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                 />
 
                 {/* Floating Tag Top Left */}
@@ -123,9 +126,9 @@ export const Hero: React.FC = () => {
               {/* Bottom Card Caption */}
               <div className="mt-4 px-2 flex items-center justify-between">
                 <div>
-                  <h3 className="font-serif font-bold text-museum-dark text-base">
+                  <p className="font-serif font-bold text-museum-dark text-base">
                     {t.hero.floatingCard.title}
-                  </h3>
+                  </p>
                   <p className="text-xs text-museum-wood/80 font-medium">
                     {t.hero.floatingCard.subtitle}
                   </p>
@@ -143,8 +146,9 @@ export const Hero: React.FC = () => {
               <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-gold-300">
                 <Image
                   src="/images/gift_unboxing.jpg"
-                  alt="Luxe geschenkdoos"
+                  alt="Frameit.be Luxe Geschenkdoos met Lakzegel"
                   fill
+                  sizes="48px"
                   className="object-cover"
                 />
               </div>

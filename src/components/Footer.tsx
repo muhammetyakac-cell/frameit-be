@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gold-500">
-                <Image src="/images/logo.jpg" alt="Frameit.be Logo" fill className="object-cover" />
+                <Image src="/images/logo.jpg" alt="Frameit.be Logo" fill sizes="48px" className="object-cover" />
               </div>
               <div>
                 <span className="font-serif text-2xl font-bold tracking-tight text-white block">
@@ -44,9 +44,9 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-serif font-bold text-sm text-gold-300 uppercase tracking-wider">
+            <h3 className="font-serif font-bold text-sm text-gold-300 uppercase tracking-wider">
               {t.footer.quickLinks}
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs text-stone-400">
               <li>
                 <a href="#customizer" className="hover:text-gold-400 transition-colors">
@@ -56,6 +56,11 @@ export const Footer: React.FC = () => {
               <li>
                 <a href="#catalog" className="hover:text-gold-400 transition-colors">
                   {t.nav.catalog}
+                </a>
+              </li>
+              <li>
+                <a href="#occasions" className="hover:text-gold-400 transition-colors">
+                  {t.nav.occasions}
                 </a>
               </li>
               <li>
@@ -78,24 +83,24 @@ export const Footer: React.FC = () => {
 
           {/* Legal / Service */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-serif font-bold text-sm text-gold-300 uppercase tracking-wider">
+            <h3 className="font-serif font-bold text-sm text-gold-300 uppercase tracking-wider">
               {t.footer.legal}
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs text-stone-400">
               <li>
-                <span className="hover:text-white transition-colors cursor-pointer">
+                <a href="#faq" className="hover:text-white transition-colors">
                   {t.footer.shipping}
-                </span>
+                </a>
               </li>
               <li>
-                <span className="hover:text-white transition-colors cursor-pointer">
+                <a href="#faq" className="hover:text-white transition-colors">
                   {t.footer.privacy}
-                </span>
+                </a>
               </li>
               <li>
-                <span className="hover:text-white transition-colors cursor-pointer">
+                <a href="#faq" className="hover:text-white transition-colors">
                   {t.footer.terms}
-                </span>
+                </a>
               </li>
               <li className="pt-2 text-emerald-400 font-semibold flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4" />
