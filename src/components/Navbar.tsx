@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
         ? 'Bonjour Frameit.be ! J\'ai une question concernant les cadres 3D Mini Musée.'
         : 'Hello Frameit.be! I have a question regarding the 3D Mini Memory Museum frames.'
     );
-    window.open(`https://wa.me/32470123456?text=${text}`, '_blank');
+    window.open(`https://wa.me/32499931101?text=${text}`, '_blank');
   };
 
   return (

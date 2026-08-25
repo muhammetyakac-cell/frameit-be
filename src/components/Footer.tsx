@@ -121,8 +121,8 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
-                <a href="https://wa.me/32470123456" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  +32 470 12 34 56 (WhatsApp 24/7)
+                <a href="https://wa.me/32499931101" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  +32 499 93 11 01 (WhatsApp 24/7)
                 </a>
               </div>
               <div className="flex items-center gap-2">

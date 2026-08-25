@@ -246,7 +246,7 @@ export const FrameCustomizer: React.FC = () => {
     ].join('\n');
 
     const message = t.whatsapp.orderMessageTemplate(specs);
-    window.open(`https://wa.me/32470123456?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/32499931101?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (

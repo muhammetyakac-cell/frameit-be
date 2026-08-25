@@ -32,7 +32,7 @@ export const WhatsAppFloat: React.FC = () => {
   ];
 
   const handleSendPrompt = (promptText: string) => {
-    const url = `https://wa.me/32470123456?text=${encodeURIComponent(promptText)}`;
+    const url = `https://wa.me/32499931101?text=${encodeURIComponent(promptText)}`;
     window.open(url, '_blank');
     setIsOpen(false);
   };
@@ -40,7 +40,7 @@ export const WhatsAppFloat: React.FC = () => {
   const handleCustomSend = (e: React.FormEvent) => {
     e.preventDefault();
     if (!customMsg.trim()) return;
-    const url = `https://wa.me/32470123456?text=${encodeURIComponent(customMsg)}`;
+    const url = `https://wa.me/32499931101?text=${encodeURIComponent(customMsg)}`;
     window.open(url, '_blank');
     setCustomMsg('');
     setIsOpen(false);

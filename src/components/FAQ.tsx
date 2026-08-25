@@ -86,7 +86,7 @@ export const FAQ: React.FC = () => {
             </p>
           </div>
           <button
-            onClick={() => window.open('https://wa.me/32470123456', '_blank')}
+            onClick={() => window.open('https://wa.me/32499931101', '_blank')}
             className="px-5 py-2.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md hover:shadow-lg transition-all shrink-0"
           >
             <MessageCircle className="w-4 h-4 fill-white" />

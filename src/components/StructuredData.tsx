@@ -46,8 +46,9 @@ export const StructuredData: React.FC = () => {
         contactPoint: {
           '@type': 'ContactPoint',
           contactType: 'customer service',
+          telephone: '+32499931101',
           availableLanguage: ['Dutch', 'French', 'English'],
-          url: 'https://wa.me/32470123456',
+          url: 'https://wa.me/32499931101',
         },
         sameAs: [
           'https://instagram.com/frameit.be',
