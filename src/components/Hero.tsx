@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
 import { Sparkles, Heart, Star, ShieldCheck, ArrowRight, Lightbulb, Package, Gift } from 'lucide-react';
 
-export const Hero: React.FC = () => {
+export const Hero: React.FC<{ customTitle?: React.ReactNode }> = ({ customTitle }) => {
   const { t } = useLanguage();
 
   return (
@@ -168,5 +168,6 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
+
 
 
