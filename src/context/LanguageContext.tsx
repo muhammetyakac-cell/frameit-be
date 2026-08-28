@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Language } from '@/types';
@@ -20,11 +20,9 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     if (saved && (saved === 'nl' || saved === 'fr' || saved === 'en')) {
       setLanguageState(saved);
     } else {
-      // detect browser language
-      const browserLang = navigator.language.slice(0, 2);
-      if (browserLang === 'fr') setLanguageState('fr');
-      else if (browserLang === 'nl') setLanguageState('nl');
-      else setLanguageState('en');
+      // User requested default language to be Dutch (nl)
+      setLanguageState('nl');
+      localStorage.setItem('frameit_lang', 'nl');
     }
   }, []);
 

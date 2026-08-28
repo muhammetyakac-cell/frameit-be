@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: { params: { location: string 
   return {
     title,
     description,
+    alternates: { canonical: `https://www.frameit.living/cadeau/${loc.id}` },
     openGraph: {
       title,
       description,

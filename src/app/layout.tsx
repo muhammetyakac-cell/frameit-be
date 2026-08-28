@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { LanguageProvider } from '@/context/LanguageContext';
+import { CookieBanner } from '@/components/CookieBanner';
 
 const BASE_URL = 'https://www.frameit.living';
 
@@ -136,8 +137,10 @@ export default function RootLayout({
       <body className="antialiased min-h-screen flex flex-col bg-[#FAF7F2] text-[#1C1917]">
         <LanguageProvider>
           {children}
+          <CookieBanner />
         </LanguageProvider>
       </body>
     </html>
   );
 }
+
