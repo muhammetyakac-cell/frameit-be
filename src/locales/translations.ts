@@ -1,12 +1,12 @@
 export const translations = {
   nl: {
     meta: {
-      title: "Frameit.be | 3D Mini Memory Museum — Hét Originele Gepersonaliseerde Cadeau in België",
+      title: "Frameit Living | 3D Mini Memory Museum — Hét Originele Gepersonaliseerde Cadeau in België",
       description: "Op zoek naar een uniek gepersonaliseerd cadeau in België? Verander je mooiste foto's in een verlicht 3D miniatuur museum met warme LED-spots, gouden baroklijstjes en handgemaakte figuurtjes. Perfect voor huwelijk, trouwcadeau, jubileum, geboorte of verjaardag.",
       keywords: "gepersonaliseerd cadeau belgië, origineel huwelijkscadeau, trouwcadeau met foto, kraamcadeau met naam, geboortecadeau baby, jubileum cadeau koppel, 3d fotolijst met diepte, mini memory museum, fotolijst met verlichting, handgemaakt cadeau antwerpen brussel gent brugge leuven",
     },
     nav: {
-      brand: "Frameit.be",
+      brand: "Frameit Living",
       subBrand: "Mini Memory Museum",
       customizer: "Stel Zelf Samen",
       catalog: "Collecties",
@@ -235,7 +235,7 @@ export const translations = {
     reviews: {
       tag: "Tevreden Klanten",
       title: "Verhalen Die We Mogen Vereeuwigen",
-      subtitle: "Ontdek waarom honderden mensen in België kiezen voor Frameit.be voor hun meest dierbare momenten.",
+      subtitle: "Ontdek waarom honderden mensen in België kiezen voor Frameit Living voor hun meest dierbare momenten.",
       verifiedBadge: "Geverifieerde Koper",
       items: [
         {
@@ -260,7 +260,7 @@ export const translations = {
           author: "Maxime L.",
           city: "Liège",
           frame: "Baby Birth Announcement",
-          comment: "Magnifique réalisation pour la naissance de notre petite fille ! La qualité des mini cadres dorés et la lumière chaude sont exceptionnelles. Merci Frameit.be !",
+          comment: "Magnifique réalisation pour la naissance de notre petite fille ! La qualité des mini cadres dorés et la lumière chaude sont exceptionnelles. Merci Frameit Living !",
         }
       ]
     },
@@ -279,13 +279,13 @@ export const translations = {
     },
     whatsapp: {
       floatingTooltip: "Vragen of direct bestellen? Chat met ons!",
-      chatHeader: "Frameit.be Atelier België",
+      chatHeader: "Frameit Living Atelier België",
       chatSubtitle: "Antwoordt meestal binnen enkele minuten",
       startChat: "Open WhatsApp Chat",
-      orderMessageTemplate: (specs: string) => `Hallo Frameit.be! 👋 Ik wil graag een gepersonaliseerd 3D Mini Memory Museum bestellen:\n\n${specs}\n\nKunnen jullie me laten weten hoe ik mijn foto's kan doorsturen? Alvast bedankt!`,
+      orderMessageTemplate: (specs: string) => `Hallo Frameit Living! 👋 Ik wil graag een gepersonaliseerd 3D Mini Memory Museum bestellen:\n\n${specs}\n\nKunnen jullie me laten weten hoe ik mijn foto's kan doorsturen? Alvast bedankt!`,
     },
     footer: {
-      description: "Frameit.be is hét Belgische atelier voor handgemaakte 3D Mini Memory Museum lijsten. Wij veranderen jouw mooiste herinneringen in magische miniatuur werelden vol warmte en liefde.",
+      description: "Frameit Living is hét Belgische atelier voor handgemaakte 3D Mini Memory Museum lijsten. Wij veranderen jouw mooiste herinneringen in magische miniatuur werelden vol warmte en liefde.",
       quickLinks: "Snelle Links",
       legal: "Informatie",
       privacy: "Privacybeleid",
@@ -297,12 +297,12 @@ export const translations = {
   },
   fr: {
     meta: {
-      title: "Frameit.be | Mini Musée 3D Souvenirs — L'Idée Cadeau Personnalisé N°1 en Belgique",
+      title: "Frameit Living | Mini Musée 3D Souvenirs — L'Idée Cadeau Personnalisé N°1 en Belgique",
       description: "À la recherche d'une idée cadeau originale et personnalisée en Belgique ? Transformez vos plus belles photos en un mini musée 3D lumineux avec cadres dorés baroques, spots LED chaleureux et figurines sur mesure. Idéal pour mariage, anniversaire, naissance ou couple.",
       keywords: "cadeau personnalisé belgique, idée cadeau original bruxelles liège namur, cadeau de mariage personnalisé, cadre photo 3d lumineux, cadeau de naissance bébé, boîte à souvenirs personnalisée, cadeau anniversaire couple, cadre vitrine 3d fait main",
     },
     nav: {
-      brand: "Frameit.be",
+      brand: "Frameit Living",
       subBrand: "Mini Musée de Souvenirs",
       customizer: "Personnaliser",
       catalog: "Collections",
@@ -531,7 +531,7 @@ export const translations = {
     reviews: {
       tag: "Avis Clients",
       title: "Des Émotions Partagées",
-      subtitle: "Découvrez les témoignages de ceux qui ont offert ou reçu un cadre Frameit.be en Belgique.",
+      subtitle: "Découvrez les témoignages de ceux qui ont offert ou reçu un cadre Frameit Living en Belgique.",
       verifiedBadge: "Acheteur Vérifié",
       items: [
         {
@@ -556,7 +556,7 @@ export const translations = {
           author: "Maxime L.",
           city: "Liège",
           frame: "Boîte Naissance Bébé",
-          comment: "Magnifique réalisation pour la naissance de notre petite fille ! La qualité des mini cadres dorés et la lumière chaude sont exceptionnelles. Merci Frameit.be !",
+          comment: "Magnifique réalisation pour la naissance de notre petite fille ! La qualité des mini cadres dorés et la lumière chaude sont exceptionnelles. Merci Frameit Living !",
         }
       ]
     },
@@ -575,13 +575,13 @@ export const translations = {
     },
     whatsapp: {
       floatingTooltip: "Une question ou commande rapide ? Discutez avec nous !",
-      chatHeader: "Atelier Frameit.be Belgique",
+      chatHeader: "Atelier Frameit Living Belgique",
       chatSubtitle: "Réponse habituelle en quelques minutes",
       startChat: "Ouvrir le Chat WhatsApp",
-      orderMessageTemplate: (specs: string) => `Bonjour Frameit.be ! 👋 Je souhaite commander un Mini Musée de Souvenirs 3D personnalisé :\n\n${specs}\n\nPourriez-vous m'indiquer la marche à suivre pour l'envoi de mes photos ? Merci beaucoup !`,
+      orderMessageTemplate: (specs: string) => `Bonjour Frameit Living ! 👋 Je souhaite commander un Mini Musée de Souvenirs 3D personnalisé :\n\n${specs}\n\nPourriez-vous m'indiquer la marche à suivre pour l'envoi de mes photos ? Merci beaucoup !`,
     },
     footer: {
-      description: "Frameit.be est l'atelier belge de référence pour les cadres 3D Mini Musées de Souvenirs faits main. Nous transformons vos moments d'amour en mondes miniatures féeriques.",
+      description: "Frameit Living est l'atelier belge de référence pour les cadres 3D Mini Musées de Souvenirs faits main. Nous transformons vos moments d'amour en mondes miniatures féeriques.",
       quickLinks: "Accès Rapide",
       legal: "Informations",
       privacy: "Politique de Confidentialité",
@@ -593,12 +593,12 @@ export const translations = {
   },
   en: {
     meta: {
-      title: "Frameit.be | 3D Mini Memory Museum — #1 Personalized Gift in Belgium",
+      title: "Frameit Living | 3D Mini Memory Museum — #1 Personalized Gift in Belgium",
       description: "Looking for a unique personalized gift in Belgium? Turn your favorite photos into an illuminated 3D miniature museum frame with warm LED spotlights, antique golden baroque frames, and handcrafted figurines. Perfect for weddings, anniversaries, baby milestones, or birthdays.",
       keywords: "personalized gift belgium, unique wedding gift brussels antwerp, custom anniversary frame, baby birth keepsake shadow box, handcrafted 3d photo frame led, bespoke gift shop belgium",
     },
     nav: {
-      brand: "Frameit.be",
+      brand: "Frameit Living",
       subBrand: "Mini Memory Museum",
       customizer: "Build Your Frame",
       catalog: "Collections",
@@ -827,7 +827,7 @@ export const translations = {
     reviews: {
       tag: "Customer Stories",
       title: "Cherished Moments We've Preserved",
-      subtitle: "See why hundreds of happy customers across Belgium choose Frameit.be for their most special gifts.",
+      subtitle: "See why hundreds of happy customers across Belgium choose Frameit Living for their most special gifts.",
       verifiedBadge: "Verified Buyer",
       items: [
         {
@@ -852,7 +852,7 @@ export const translations = {
           author: "Maxime L.",
           city: "Liège, Belgium",
           frame: "Baby Birth Announcement",
-          comment: "Magnificent keepsake for our baby daughter's birth! The tiny golden frames and warm glow make it look like a magical dream box. Thank you Frameit.be!",
+          comment: "Magnificent keepsake for our baby daughter's birth! The tiny golden frames and warm glow make it look like a magical dream box. Thank you Frameit Living!",
         }
       ]
     },
@@ -871,13 +871,13 @@ export const translations = {
     },
     whatsapp: {
       floatingTooltip: "Questions or instant order? Chat with our studio!",
-      chatHeader: "Frameit.be Belgium Studio",
+      chatHeader: "Frameit Living Belgium Studio",
       chatSubtitle: "Usually replies in a few minutes",
       startChat: "Open WhatsApp Chat",
-      orderMessageTemplate: (specs: string) => `Hello Frameit.be! 👋 I would like to order a custom 3D Mini Memory Museum frame:\n\n${specs}\n\nCould you let me know how to send my photos? Thank you!`,
+      orderMessageTemplate: (specs: string) => `Hello Frameit Living! 👋 I would like to order a custom 3D Mini Memory Museum frame:\n\n${specs}\n\nCould you let me know how to send my photos? Thank you!`,
     },
     footer: {
-      description: "Frameit.be is Belgium's premier artisanal studio for handcrafted 3D Mini Memory Museum shadow box frames. We turn your greatest memories into magical miniature worlds filled with warmth and love.",
+      description: "Frameit Living is Belgium's premier artisanal studio for handcrafted 3D Mini Memory Museum shadow box frames. We turn your greatest memories into magical miniature worlds filled with warmth and love.",
       quickLinks: "Quick Links",
       legal: "Information",
       privacy: "Privacy Policy",
@@ -888,3 +888,4 @@ export const translations = {
     }
   }
 };
+

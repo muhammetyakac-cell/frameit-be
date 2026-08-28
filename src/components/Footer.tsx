@@ -20,11 +20,11 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gold-500">
-                <Image src="/images/logo.jpg" alt="Frameit.be Logo" fill sizes="48px" className="object-cover" />
+                <Image src="/images/logo.jpg" alt="Frameit Living Logo" fill sizes="48px" className="object-cover" />
               </div>
               <div>
                 <span className="font-serif text-2xl font-bold tracking-tight text-white block">
-                  FRAMEIT<span className="text-gold-400">.BE</span>
+                  FRAMEIT<span className="text-gold-400">.LIVING</span>
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.25em] text-gold-300/80 font-medium">
                   {t.nav.subBrand}
@@ -127,7 +127,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>hello@frameit.be</span>
+                <span>hello@Frameit Living</span>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar: Copyright & Payment Badges */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} Frameit.be. {t.footer.rights}</p>
+          <p>© {new Date().getFullYear()} Frameit Living. {t.footer.rights}</p>
 
           {/* Payment Badges simulation */}
           <div className="flex items-center gap-2 font-mono text-[10px] text-stone-400">
@@ -196,3 +196,4 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
+

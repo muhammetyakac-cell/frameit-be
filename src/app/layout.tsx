@@ -2,20 +2,21 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { LanguageProvider } from '@/context/LanguageContext';
 
-const BASE_URL = 'https://myframegift.vercel.app';
+const BASE_URL = 'https://www.frameit.living';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: 'Frameit.be | 3D Mini Memory Museum Lijsten - Handgemaakt in België',
-    template: '%s | Frameit.be',
+    default: 'Frameit Living | 3D Mini Memory Museum Lijsten - Handgemaakt in België',
+    template: '%s | Frameit Living',
   },
   description:
     'Handgemaakte gepersonaliseerde 3D schaduwdoos lijsten met warme LED-spotlights, gouden barok fotolijstjes en op maat gemaakte figuurtjes. Het perfecte cadeau in België. | Cadres 3D Mini Musée de Souvenirs fait main en Belgique | Handmade 3D Mini Memory Museum frames in Belgium.',
   keywords: [
     // Dutch (Flemish) — Primary Belgian Market
-    'Frameit.be',
+    'Frameit Living',
+    'Frameit.living',
     '3D mini memory museum',
     'schaduwdoos lijst',
     'gepersonaliseerd cadeau België',
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
     'custom wedding gift handmade Europe',
     'miniature museum photo display',
   ],
-  authors: [{ name: 'Frameit.be Atelier', url: BASE_URL }],
-  creator: 'Frameit.be',
-  publisher: 'Frameit.be Atelier',
+  authors: [{ name: 'Frameit Living Atelier', url: BASE_URL }],
+  creator: 'Frameit Living',
+  publisher: 'Frameit Living Atelier',
   icons: {
     icon: '/images/logo.jpg',
     apple: '/images/logo.jpg',
@@ -68,29 +69,29 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Frameit.be | 3D Mini Memory Museum — Handgemaakt in België',
+    title: 'Frameit Living | 3D Mini Memory Museum — Handgemaakt in België',
     description:
       'Verander je mooiste herinneringen in een betoverend verlicht 3D miniatuur museum met gouden baroklijstjes, LED-spots en handgemaakte figuurtjes.',
     url: BASE_URL,
-    siteName: 'Frameit.be',
+    siteName: 'Frameit Living',
     images: [
       {
         url: '/images/museum_couple.jpg',
         width: 1200,
         height: 900,
-        alt: 'Frameit.be 3D Mini Memory Museum — Gepersonaliseerd Cadeau met LED Verlichting',
+        alt: 'Frameit Living 3D Mini Memory Museum — Gepersonaliseerd Cadeau met LED Verlichting',
       },
       {
         url: '/images/family_museum.jpg',
         width: 1200,
         height: 900,
-        alt: 'Frameit.be Familie Mini Memory Museum met Gouden Baroklijstjes',
+        alt: 'Frameit Living Familie Mini Memory Museum met Gouden Baroklijstjes',
       },
       {
         url: '/images/gift_unboxing.jpg',
         width: 1200,
         height: 900,
-        alt: 'Frameit.be Luxe Geschenkdoos met Waszegel — Cadeau Uitpakervaring',
+        alt: 'Frameit Living Luxe Geschenkdoos met Waszegel — Cadeau Uitpakervaring',
       },
     ],
     locale: 'nl_BE',
@@ -99,12 +100,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Frameit.be | 3D Mini Memory Museum — Handgemaakt in België',
+    title: 'Frameit Living | 3D Mini Memory Museum — Handgemaakt in België',
     description:
       'Jouw favoriete momenten veranderd in een warm verlicht 3D miniatuur museum. Gepersonaliseerd cadeau met gouden baroklijstjes & LED-spots.',
     images: ['/images/museum_couple.jpg'],
-    creator: '@frameitbe',
-    site: '@frameitbe',
+    creator: '@frameitliving',
+    site: '@frameitliving',
   },
   category: 'shopping',
   classification: 'Personalized Gifts & Home Decor',

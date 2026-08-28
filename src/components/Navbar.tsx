@@ -23,10 +23,10 @@ export const Navbar: React.FC = () => {
   const handleWhatsAppContact = () => {
     const text = encodeURIComponent(
       language === 'nl'
-        ? 'Hallo Frameit.be! Ik heb een vraag over de 3D Mini Memory Museum lijsten.'
+        ? 'Hallo Frameit Living! Ik heb een vraag over de 3D Mini Memory Museum lijsten.'
         : language === 'fr'
-        ? 'Bonjour Frameit.be ! J\'ai une question concernant les cadres 3D Mini Musée.'
-        : 'Hello Frameit.be! I have a question regarding the 3D Mini Memory Museum frames.'
+        ? 'Bonjour Frameit Living ! J\'ai une question concernant les cadres 3D Mini Musée.'
+        : 'Hello Frameit Living! I have a question regarding the 3D Mini Memory Museum frames.'
     );
     window.open(`https://wa.me/32499931101?text=${text}`, '_blank');
   };
@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
             <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gold-500 shadow-md transition-transform group-hover:scale-105">
               <Image
                 src="/images/logo.jpg"
-                alt="Frameit.be Logo"
+                alt="Frameit Living Logo"
                 fill
                 sizes="48px"
                 className="object-cover"
@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-museum-dark group-hover:text-museum-terracotta transition-colors">
-                FRAMEIT<span className="text-gold-600">.BE</span>
+                FRAMEIT<span className="text-gold-600">.LIVING</span>
               </span>
               <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.25em] text-museum-wood/80 font-medium">
                 {t.nav.subBrand}
@@ -245,3 +245,4 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
+

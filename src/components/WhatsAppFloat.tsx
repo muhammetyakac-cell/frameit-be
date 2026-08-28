@@ -56,7 +56,7 @@ export const WhatsAppFloat: React.FC = () => {
           <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] p-4 text-white flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-white">
-                <Image src="/images/logo.jpg" alt="Frameit.be Logo" fill sizes="40px" className="object-cover" />
+                <Image src="/images/logo.jpg" alt="Frameit Living Logo" fill sizes="40px" className="object-cover" />
               </div>
               <div>
                 <h4 className="font-bold text-sm">{t.whatsapp.chatHeader}</h4>
@@ -80,7 +80,7 @@ export const WhatsAppFloat: React.FC = () => {
               <span className="font-bold block text-museum-terracotta mb-1">
                 👋 Hallo / Bonjour / Hello !
               </span>
-              Welkom bij Frameit.be. Hoe kunnen we je helpen met jouw 3D Mini Memory Museum?
+              Welkom bij Frameit Living. Hoe kunnen we je helpen met jouw 3D Mini Memory Museum?
             </div>
 
             {/* Quick Prompts */}
@@ -142,3 +142,4 @@ export const WhatsAppFloat: React.FC = () => {
     </div>
   );
 };
+

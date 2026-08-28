@@ -1,0 +1,74 @@
+﻿import React from 'react';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { getLocationsByLang, getLocationById } from '@/lib/locations';
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { FrameCustomizer } from '@/components/FrameCustomizer';
+import { ProductCatalog } from '@/components/ProductCatalog';
+import { GiftOccasions } from '@/components/GiftOccasions';
+import { UnboxingShowcase } from '@/components/UnboxingShowcase';
+import { HowItWorks } from '@/components/HowItWorks';
+import { CustomerReviews } from '@/components/CustomerReviews';
+import { FAQ } from '@/components/FAQ';
+import { WhatsAppFloat } from '@/components/WhatsAppFloat';
+import { Footer } from '@/components/Footer';
+import { StructuredData } from '@/components/StructuredData';
+
+export async function generateStaticParams() {
+  const locations = getLocationsByLang('fr');
+  return locations.map((loc) => ({
+    location: loc.id,
+  }));
+}
+
+export async function generateMetadata({ params }: { params: { location: string } }): Promise<Metadata> {
+  const loc = getLocationById(params.location);
+  if (!loc || !loc.lang.includes('fr')) return {};
+
+  const title = `Cadeau Personnalisé à ${loc.name} | Frameit Living`;
+  const description = `À la recherche d'un cadeau personnalisé original à ${loc.name} ? Découvrez les cadres 3D Mini Musée de Souvenirs faits main par Frameit Living.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+    }
+  };
+}
+
+export default function LocationPageFR({ params }: { params: { location: string } }) {
+  const loc = getLocationById(params.location);
+  
+  if (!loc || !loc.lang.includes('fr')) {
+    notFound();
+  }
+
+  const customTitle = (
+    <>
+      <span className="block italic text-museum-terracotta">Cadeau Personnalisé</span>
+      <span className="block text-museum-dark mt-1">à {loc.name}</span>
+    </>
+  );
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      <StructuredData />
+      <Navbar />
+      <main className="flex-1">
+        <Hero customTitle={customTitle} />
+        <FrameCustomizer />
+        <ProductCatalog />
+        <GiftOccasions />
+        <UnboxingShowcase />
+        <HowItWorks />
+        <CustomerReviews />
+        <FAQ />
+      </main>
+      <WhatsAppFloat />
+      <Footer />
+    </div>
+  );
+}

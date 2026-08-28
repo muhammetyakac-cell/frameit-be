@@ -1,19 +1,20 @@
-import React from 'react';
+﻿import React from 'react';
+import { belgianLocations } from '@/lib/locations';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://myframegift.vercel.app';
+const BASE_URL = 'https://www.frameit.living';
 
-export const StructuredData: React.FC = () => {
+export const StructuredData = () => {
   const schemaGraph = {
     '@context': 'https://schema.org',
     '@graph': [
-      // 1. WebSite Entity (Site Name & Multilingual search signals)
+      // 1. WebSite Entity
       {
         '@type': 'WebSite',
         '@id': `${BASE_URL}/#website`,
         url: BASE_URL,
-        name: 'Frameit.be',
+        name: 'Frameit Living',
         alternateName: ['Frameit', 'Mini Memory Museum', 'Frameit Belgium'],
-        description: 'Handgemaakte gepersonaliseerde 3D schaduwdoos lijsten met LED verlichting in België.',
+        description: 'Verander je mooiste herinneringen in een betoverend verlicht 3D miniatuur museum.',
         inLanguage: ['nl-BE', 'fr-BE', 'en'],
         publisher: {
           '@id': `${BASE_URL}/#organization`,
@@ -24,16 +25,16 @@ export const StructuredData: React.FC = () => {
       {
         '@type': ['Organization', 'OnlineStore'],
         '@id': `${BASE_URL}/#organization`,
-        name: 'Frameit.be — Mini Memory Museum',
+        name: 'Frameit Living — Mini Memory Museum',
         url: BASE_URL,
         logo: {
           '@type': 'ImageObject',
           url: `${BASE_URL}/images/logo.jpg`,
-          caption: 'Frameit.be Logo',
+          caption: 'Frameit Living Logo',
         },
         image: `${BASE_URL}/images/museum_couple.jpg`,
         description: 'Belgisch atelier gespecialiseerd in handgemaakte 3D Mini Memory Museum lijsten en gepersonaliseerde cadeaus.',
-        email: 'hello@frameit.be',
+        email: 'hello@frameit.living',
         currenciesAccepted: 'EUR',
         paymentAccepted: 'Bancontact, Payconiq, Visa, Mastercard, PayPal, Apple Pay, iDEAL',
         priceRange: '€69 - €109',
@@ -42,6 +43,7 @@ export const StructuredData: React.FC = () => {
           { '@type': 'Country', name: 'Netherlands' },
           { '@type': 'Country', name: 'Luxembourg' },
           { '@type': 'Country', name: 'France' },
+          ...belgianLocations.map(loc => ({ '@type': 'City', name: loc.name, addressCountry: 'BE' }))
         ],
         contactPoint: {
           '@type': 'ContactPoint',
@@ -51,8 +53,8 @@ export const StructuredData: React.FC = () => {
           url: 'https://wa.me/32499931101',
         },
         sameAs: [
-          'https://instagram.com/frameit.be',
-          'https://tiktok.com/@frameit.be',
+          'https://instagram.com/frameitliving',
+          'https://tiktok.com/@frameitliving',
         ],
       },
 
@@ -71,7 +73,7 @@ export const StructuredData: React.FC = () => {
         ],
         brand: {
           '@type': 'Brand',
-          name: 'Frameit.be',
+          name: 'Frameit Living',
         },
         manufacturer: {
           '@id': `${BASE_URL}/#organization`,

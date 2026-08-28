@@ -84,7 +84,7 @@ export const GiftOccasions: React.FC = () => {
           </div>
 
           <a
-            href="https://wa.me/32499931101?text=Hallo%20Frameit.be!%20Ik%20zoek%20een%20gepersonaliseerd%20cadeau%20en%20wil%20graag%20advies."
+            href="https://wa.me/32499931101?text=Hallo%20Frameit Living!%20Ik%20zoek%20een%20gepersonaliseerd%20cadeau%20en%20wil%20graag%20advies."
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 px-6 py-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
@@ -97,3 +97,4 @@ export const GiftOccasions: React.FC = () => {
     </section>
   );
 };
+

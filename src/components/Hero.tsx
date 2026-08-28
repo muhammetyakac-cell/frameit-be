@@ -28,9 +28,8 @@ export const Hero: React.FC = () => {
 
             {/* Main Headline with semantic SEO expansion */}
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-museum-dark leading-[1.15]">
-              <span className="block italic text-museum-terracotta">{t.hero.titleLine1}</span>
-              <span className="block text-museum-dark mt-1">{t.hero.titleLine2}</span>
-              <span className="sr-only"> — Frameit.be: Hét Originele Gepersonaliseerde Cadeau & 3D Mini Memory Museum in België</span>
+              {customTitle ? customTitle : (<><span className="block italic text-museum-terracotta">{t.hero.titleLine1}</span><span className="block text-museum-dark mt-1">{t.hero.titleLine2}</span></>)}
+              <span className="sr-only"> — Frameit Living: Hét Originele Gepersonaliseerde Cadeau & 3D Mini Memory Museum in België</span>
             </h1>
 
             {/* Subtitle */}
@@ -103,7 +102,7 @@ export const Hero: React.FC = () => {
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-inner border border-white/60">
                 <Image
                   src="/images/museum_couple.jpg"
-                  alt="Frameit.be 3D Mini Memory Museum — Gepersonaliseerd Huwelijkscadeau & Trouwlijst met LED Verlichting"
+                  alt="Frameit Living 3D Mini Memory Museum — Gepersonaliseerd Huwelijkscadeau & Trouwlijst met LED Verlichting"
                   fill
                   priority
                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 520px"
@@ -146,7 +145,7 @@ export const Hero: React.FC = () => {
               <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-gold-300">
                 <Image
                   src="/images/gift_unboxing.jpg"
-                  alt="Frameit.be Luxe Geschenkdoos met Lakzegel"
+                  alt="Frameit Living Luxe Geschenkdoos met Lakzegel"
                   fill
                   sizes="48px"
                   className="object-cover"
@@ -169,3 +168,5 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
+
+

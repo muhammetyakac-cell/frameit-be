@@ -12,7 +12,7 @@ export const UnboxingShowcase: React.FC = () => {
     nl: {
       tag: "De Complete Cadeau-ervaring",
       title: "Klaar om Harten te Verwarmen",
-      desc: "Elk Frameit.be Mini Museum wordt met de grootste zorg beschermd en feestelijk verpakt in onze kenmerkende bordeauxrode luxedoos met gouden foliedruk en een handgestempelde lakzegel.",
+      desc: "Elk Frameit Living Mini Museum wordt met de grootste zorg beschermd en feestelijk verpakt in onze kenmerkende bordeauxrode luxedoos met gouden foliedruk en een handgestempelde lakzegel.",
       point1: "Luxe bewaardoos met goudfolie",
       point2: "Gepersonaliseerd wenskaartje met echte waszegel",
       point3: "Gedroogde gipskruid bloemetjes & satijnen lint",
@@ -22,7 +22,7 @@ export const UnboxingShowcase: React.FC = () => {
     fr: {
       tag: "L'Expérience Cadeau Complète",
       title: "Prêt à Émerveiller Vos Proches",
-      desc: "Chaque Mini Musée Frameit.be est soigneusement protégé et présenté dans notre sublime coffret rigide bordeaux aux dorures raffinées, accompagné d'une carte scellée à la cire à la main.",
+      desc: "Chaque Mini Musée Frameit Living est soigneusement protégé et présenté dans notre sublime coffret rigide bordeaux aux dorures raffinées, accompagné d'une carte scellée à la cire à la main.",
       point1: "Coffret rigide bordeaux avec marquage doré",
       point2: "Carte personnalisée scellée à la cire véritable",
       point3: "Fleurs séchées délicates & ruban de satin",
@@ -32,7 +32,7 @@ export const UnboxingShowcase: React.FC = () => {
     en: {
       tag: "The Complete Gifting Experience",
       title: "Ready to Warm Every Heart",
-      desc: "Every Frameit.be Mini Museum is packaged like a royal treasure in our signature burgundy presentation box with gold foil lettering and a handmade wax-sealed message card.",
+      desc: "Every Frameit Living Mini Museum is packaged like a royal treasure in our signature burgundy presentation box with gold foil lettering and a handmade wax-sealed message card.",
       point1: "Signature luxury burgundy gift box with gold foil",
       point2: "Personalized greeting card with authentic wax seal",
       point3: "Delicate baby's breath flowers & satin ribbon",
@@ -42,7 +42,7 @@ export const UnboxingShowcase: React.FC = () => {
   }[language] || {
     tag: "De Complete Cadeau-ervaring",
     title: "Klaar om Harten te Verwarmen",
-    desc: "Elk Frameit.be Mini Museum wordt met de grootste zorg beschermd en feestelijk verpakt.",
+    desc: "Elk Frameit Living Mini Museum wordt met de grootste zorg beschermd en feestelijk verpakt.",
     point1: "Luxe bewaardoos met goudfolie",
     point2: "Gepersonaliseerd wenskaartje met echte waszegel",
     point3: "Gedroogde gipskruid bloemetjes & satijnen lint",
@@ -60,7 +60,7 @@ export const UnboxingShowcase: React.FC = () => {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
                 src="/images/gift_unboxing.jpg"
-                alt="Frameit.be Luxury Unboxing Experience — Luxe Cadeaubox met Lakzegel"
+                alt="Frameit Living Luxury Unboxing Experience — Luxe Cadeaubox met Lakzegel"
                 fill
                 sizes="(max-width: 1024px) 92vw, 580px"
                 className="object-cover"
@@ -138,3 +138,4 @@ export const UnboxingShowcase: React.FC = () => {
     </section>
   );
 };
+
