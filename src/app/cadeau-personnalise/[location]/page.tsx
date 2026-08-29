@@ -47,19 +47,12 @@ export default function LocationPageFR({ params }: { params: { location: string 
     notFound();
   }
 
-  const customTitle = (
-    <>
-      <span className="block italic text-museum-terracotta">Cadeau Personnalisé</span>
-      <span className="block text-museum-dark mt-1">à {loc.name}</span>
-    </>
-  );
-
   return (
     <div className="flex flex-col min-h-screen">
       <StructuredData />
       <Navbar />
       <main className="flex-1">
-        <Hero customTitle={customTitle} />
+        <Hero titleLine1="Cadeau Personnalisé" titleLine2={`à ${loc.name}`} />
         <FrameCustomizer />
         <ProductCatalog />
         <GiftOccasions />

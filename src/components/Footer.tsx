@@ -1,10 +1,9 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
-import { Sparkles, Heart, MessageCircle, Mail, MapPin, ShieldCheck } from 'lucide-react';
+import { Heart, MapPin, Mail, MessageCircle, ShieldCheck } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -17,7 +16,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
           
           {/* Brand Info */}
-          <div className="lg:col-span-5 space-y-4">
+          <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gold-500">
                 <Image src="/images/logo.jpg" alt="Frameit Living Logo" fill sizes="48px" className="object-cover" />
@@ -48,69 +47,39 @@ export const Footer: React.FC = () => {
               {t.footer.quickLinks}
             </h3>
             <ul className="space-y-2 text-xs text-stone-400">
-              <li>
-                <a href="#customizer" className="hover:text-gold-400 transition-colors">
-                  {t.nav.customizer}
-                </a>
-              </li>
-              <li>
-                <a href="#catalog" className="hover:text-gold-400 transition-colors">
-                  {t.nav.catalog}
-                </a>
-              </li>
-              <li>
-                <a href="#occasions" className="hover:text-gold-400 transition-colors">
-                  {t.nav.occasions}
-                </a>
-              </li>
-              <li>
-                <a href="#how-it-works" className="hover:text-gold-400 transition-colors">
-                  {t.nav.crafting}
-                </a>
-              </li>
-              <li>
-                <a href="#reviews" className="hover:text-gold-400 transition-colors">
-                  {t.nav.reviews}
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-gold-400 transition-colors">
-                  {t.nav.faq}
-                </a>
-              </li>
+              <li><a href="/#customizer" className="hover:text-gold-400 transition-colors">{t.nav.customizer}</a></li>
+              <li><a href="/#catalog" className="hover:text-gold-400 transition-colors">{t.nav.catalog}</a></li>
+              <li><a href="/#occasions" className="hover:text-gold-400 transition-colors">{t.nav.occasions}</a></li>
+              <li><a href="/#how-it-works" className="hover:text-gold-400 transition-colors">{t.nav.crafting}</a></li>
             </ul>
           </div>
 
-          {/* Legal / Service */}
+          {/* SEO Categories (Occasions) */}
           <div className="lg:col-span-2 space-y-3">
             <h3 className="font-serif font-bold text-sm text-gold-300 uppercase tracking-wider">
-              {t.footer.legal}
+              {language === 'fr' ? 'Idées Cadeaux' : 'Populaire Cadeaus'}
             </h3>
             <ul className="space-y-2 text-xs text-stone-400">
-              <li>
-                <a href="#faq" className="hover:text-white transition-colors">
-                  {t.footer.shipping}
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-white transition-colors">
-                  {t.footer.privacy}
-                </a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-white transition-colors">
-                  {t.footer.terms}
-                </a>
-              </li>
-              <li className="pt-2 text-emerald-400 font-semibold flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Bpost / DPD Safe Delivery</span>
-              </li>
+              {language === 'fr' ? (
+                <>
+                  <li><a href="/occasion-cadeau/cadeau-mariage-original" className="hover:text-white transition-colors">Cadeau Mariage</a></li>
+                  <li><a href="/occasion-cadeau/cadeau-naissance-personnalise" className="hover:text-white transition-colors">Cadeau Naissance</a></li>
+                  <li><a href="/pour-qui/cadeau-pour-couple" className="hover:text-white transition-colors">Cadeau Couple</a></li>
+                  <li><a href="/pour-qui/cadeau-pour-femme" className="hover:text-white transition-colors">Cadeau Femme</a></li>
+                </>
+              ) : (
+                <>
+                  <li><a href="/gelegenheid/origineel-huwelijkscadeau" className="hover:text-white transition-colors">Huwelijkscadeau</a></li>
+                  <li><a href="/gelegenheid/kraamcadeau-met-naam" className="hover:text-white transition-colors">Kraamcadeau</a></li>
+                  <li><a href="/voor-wie/cadeau-voor-koppel" className="hover:text-white transition-colors">Voor een Koppel</a></li>
+                  <li><a href="/voor-wie/cadeau-voor-haar" className="hover:text-white transition-colors">Voor Haar</a></li>
+                </>
+              )}
             </ul>
           </div>
 
           {/* Direct Contact & Belgian Studio */}
-          <div className="lg:col-span-3 space-y-3">
+          <div className="lg:col-span-4 space-y-3">
             <h4 className="font-serif font-bold text-sm text-gold-300 uppercase tracking-wider">
               {t.nav.contact}
             </h4>
@@ -127,7 +96,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>hello@Frameit Living</span>
+                <span>hello@frameit.living</span>
               </div>
             </div>
 
@@ -196,4 +165,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-

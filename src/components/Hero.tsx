@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
 import { Sparkles, Heart, Star, ShieldCheck, ArrowRight, Lightbulb, Package, Gift } from 'lucide-react';
 
-export const Hero: React.FC<{ customTitle?: React.ReactNode }> = ({ customTitle }) => {
+export const Hero: React.FC<{ titleLine1?: string, titleLine2?: string }> = ({ titleLine1, titleLine2 }) => {
   const { t } = useLanguage();
 
   return (
@@ -28,7 +28,7 @@ export const Hero: React.FC<{ customTitle?: React.ReactNode }> = ({ customTitle 
 
             {/* Main Headline with semantic SEO expansion */}
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-museum-dark leading-[1.15]">
-              {customTitle ? customTitle : (<><span className="block italic text-museum-terracotta">{t.hero.titleLine1}</span><span className="block text-museum-dark mt-1">{t.hero.titleLine2}</span></>)}
+              <span className="block italic text-museum-terracotta">{titleLine1 || t.hero.titleLine1}</span><span className="block text-museum-dark mt-1">{titleLine2 || t.hero.titleLine2}</span>
               <span className="sr-only"> — Frameit Living: Hét Originele Gepersonaliseerde Cadeau & 3D Mini Memory Museum in België</span>
             </h1>
 
@@ -168,6 +168,7 @@ export const Hero: React.FC<{ customTitle?: React.ReactNode }> = ({ customTitle 
     </section>
   );
 };
+
 
 
 

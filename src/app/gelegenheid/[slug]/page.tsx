@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getLocationsByLang, getLocationById } from '@/lib/locations';
+import { getSeoPagesByTypeAndLang, getSeoPageBySlug } from '@/lib/seo-pages';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { FrameCustomizer } from '@/components/FrameCustomizer';
@@ -16,34 +16,31 @@ import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
 export async function generateStaticParams() {
-  const locations = getLocationsByLang('nl');
-  return locations.map((loc) => ({
-    location: loc.id,
+  const pages = getSeoPagesByTypeAndLang('occasion', 'nl');
+  return pages.map((p) => ({
+    slug: p.slug,
   }));
 }
 
-export async function generateMetadata({ params }: { params: { location: string } }): Promise<Metadata> {
-  const loc = getLocationById(params.location);
-  if (!loc || !loc.lang.includes('nl')) return {};
-
-  const title = `Gepersonaliseerd Cadeau in ${loc.name} | Frameit Living`;
-  const description = `Op zoek naar een origineel gepersonaliseerd cadeau in ${loc.name}? Ontdek de handgemaakte 3D Mini Memory Museum lijsten van Frameit Living.`;
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const page = getSeoPageBySlug(params.slug, 'nl', 'occasion');
+  if (!page) return {};
 
   return {
-    title,
-    description,
-    alternates: { canonical: `https://www.frameit.living/cadeau/${loc.id}` },
+    title: page.metaTitle,
+    description: page.metaDescription,
+    alternates: { canonical: `https://www.frameit.living/gelegenheid/${page.slug}` },
     openGraph: {
-      title,
-      description,
+      title: page.metaTitle,
+      description: page.metaDescription,
     }
   };
 }
 
-export default function LocationPageNL({ params }: { params: { location: string } }) {
-  const loc = getLocationById(params.location);
+export default function OccasionPageNL({ params }: { params: { slug: string } }) {
+  const page = getSeoPageBySlug(params.slug, 'nl', 'occasion');
   
-  if (!loc || !loc.lang.includes('nl')) {
+  if (!page) {
     notFound();
   }
 
@@ -52,7 +49,7 @@ export default function LocationPageNL({ params }: { params: { location: string 
       <StructuredData />
       <Navbar />
       <main className="flex-1">
-        <Hero titleLine1="Gepersonaliseerd Cadeau" titleLine2={`in ${loc.name}`} />
+        <Hero titleLine1={page.titleH1} titleLine2="3D Mini Memory Museum" />
         <FrameCustomizer />
         <ProductCatalog />
         <GiftOccasions />

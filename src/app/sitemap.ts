@@ -1,5 +1,6 @@
 ﻿import type { MetadataRoute } from 'next';
 import { belgianLocations } from '@/lib/locations';
+import { seoPages } from '@/lib/seo-pages';
 
 const BASE_URL = 'https://www.frameit.living';
 
@@ -23,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Location pages
   const nlLocations: MetadataRoute.Sitemap = belgianLocations
     .filter(loc => loc.lang.includes('nl'))
     .map(loc => ({
@@ -41,5 +43,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
-  return [...baseSitemap, ...nlLocations, ...frLocations];
+  // Occasion & Recipient SEO pages
+  const occasionNl: MetadataRoute.Sitemap = seoPages
+    .filter(p => p.type === 'occasion' && p.lang === 'nl')
+    .map(p => ({
+      url: `${BASE_URL}/gelegenheid/${p.slug}`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }));
+
+  const recipientNl: MetadataRoute.Sitemap = seoPages
+    .filter(p => p.type === 'recipient' && p.lang === 'nl')
+    .map(p => ({
+      url: `${BASE_URL}/voor-wie/${p.slug}`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }));
+
+  const occasionFr: MetadataRoute.Sitemap = seoPages
+    .filter(p => p.type === 'occasion' && p.lang === 'fr')
+    .map(p => ({
+      url: `${BASE_URL}/occasion-cadeau/${p.slug}`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }));
+
+  const recipientFr: MetadataRoute.Sitemap = seoPages
+    .filter(p => p.type === 'recipient' && p.lang === 'fr')
+    .map(p => ({
+      url: `${BASE_URL}/pour-qui/${p.slug}`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }));
+
+  return [
+    ...baseSitemap, 
+    ...nlLocations, 
+    ...frLocations,
+    ...occasionNl,
+    ...recipientNl,
+    ...occasionFr,
+    ...recipientFr
+  ];
 }
