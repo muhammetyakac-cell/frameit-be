@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: { location: string 
   const loc = getLocationById(params.location);
   if (!loc || !loc.lang.includes('nl')) return {};
 
-  const title = `Gepersonaliseerd Cadeau in ${loc.name} | Frameit Living`;
+  const title = `Gepersonaliseerd Cadeau in ${loc.name}`;
   const description = `Op zoek naar een origineel gepersonaliseerd cadeau in ${loc.name}? Ontdek de handgemaakte 3D Mini Memory Museum lijsten van Frameit Living.`;
 
   return {
@@ -66,3 +66,4 @@ export default function LocationPageNL({ params }: { params: { location: string 
     </div>
   );
 }
+

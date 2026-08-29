@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: { location: string 
   const loc = getLocationById(params.location);
   if (!loc || !loc.lang.includes('fr')) return {};
 
-  const title = `Cadeau Personnalisé à ${loc.name} | Frameit Living`;
+  const title = `Cadeau Personnalisé à ${loc.name}`;
   const description = `À la recherche d'un cadeau personnalisé original à ${loc.name} ? Découvrez les cadres 3D Mini Musée de Souvenirs faits main par Frameit Living.`;
 
   return {
@@ -66,3 +66,4 @@ export default function LocationPageFR({ params }: { params: { location: string 
     </div>
   );
 }
+
